@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Made by Brandon. -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chat</title>
+	<meta name="description" content="Javascript being tested.">
+	<meta name="author" content="Brandon Yee">
+
+	<link rel="stylesheet" href="style.css">
+	<!--See footer for the Google Hosted Libraries link.-->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Optional. -->
+	<!-- <base target="_blank"> -->
+</head>
+<body onload="">
+	<div class="left column">
+		<div id="changeSettingsButton">
+			<button>Change Settings</button>
+		</div>
+		<form action="" id="settings" onsubmit="return false;">
+			<div id="settingsRoom">
+				<p>Chat Room Name:</p>
+				<input type="text" id="settingsChatRoomName" name="settingsChatRoomName" value="" placeholder="lobby" autofocus>
+				<br><p>Chat Room Type:</p>
+				<span><input type="radio" name="settingsChatRoomType" value="Public" checked>Public</span><br>
+				<span><input type="radio" name="settingsChatRoomType" value="Private">Private</span>
+			</div>
+			<div id="settingsPassword">
+				<p>Password:</p>
+				<input type="password" id="settingsChatPassword" name="settingsChatPassword" value="" placeholder="ngpackistan"><br>
+			</div>
+			<div id="settingsIdentification">
+				<hr>
+				<p>Username:</p>
+				<input type="text" id="settingsUsername" name="settingsUsername" value="" placeholder="Ranson">
+				<hr>
+				<p>Access:</p>
+				<span><input type="radio" name="settingsUserRank" value="Spectator">Spectator</span><br>
+				<span><input type="radio" name="settingsUserRank" value="Member" checked>Member (default)</span><br>
+				<span><input type="radio" name="settingsUserRank" value="Admin">Exotic Tiger</span><br>
+			</div>
+			<div id="userPassword">
+				<p>Password:</p>
+				<input type="password" id="settingsUserPassword" name="settingsUserPassword" value="" placeholder="brandon is cool"><br>
+			</div>
+			<div id="settingsEnding">
+				<hr>
+				<input type="submit" value="Set Room">
+			</div>
+		</form>
+	</div>
+	<div class="middle column">
+		<div id="sendFields">
+			<p>Enter message and press enter:</p>
+			<sup>Hold down alt key while pressing enter for a line break.</sup>
+			<textarea id="input" maxlength="200" rows="10"></textarea>
+			<p><button id="sendButton">Send</button></p>
+		</div>
+	</div>
+	<div class="right column">
+		<div id="title">
+			<h2>
+				<span id="username"></span>
+				<span id="room"></span>
+			</h2>
+		</div>
+		<div id="list"></div>
+	</div>
+
+	<div id="footer">
+		<p id="copyright">Made by Brandon.</p>
+	</div>
+
+<footer>
+
+	<!-- Google CDN: https://developers.google.com/speed/libraries/ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<!-- Pubnub CDN -->
+	<script src="https://cdn.pubnub.com/pubnub-dev.js"></script>
+	<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+
+	<!-- My code. -->
+	<script src="form.js"></script>
+	<script src="pubnub.js"></script>
+
+</footer>
+</body>
+</html>
