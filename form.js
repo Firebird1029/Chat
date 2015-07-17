@@ -23,14 +23,14 @@ $(document).ready(function(){
 	    setTimeout(function() {
 	         button.removeAttr('disabled');
 	    },3000);
-	    if(!$('#input').val()){
-	       alert('field empty');
-	       button.removeAttr('disabled');
-	    }else{
-	        // $('#message').html('done');
-	        // alert("done");
-	        $('#input').val('');
-	    }
+	    // if(!$('#input').val()){
+	    //    alert('field empty');
+	    //    button.removeAttr('disabled');
+	    // }else{
+	    //     // $('#message').html('done');
+	    //     // alert("done");
+	    //     $('#input').val('');
+	    // }
 	});
 
 	// LEFT COLUMN
