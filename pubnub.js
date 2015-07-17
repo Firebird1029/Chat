@@ -72,7 +72,12 @@ $(document).ready(function () {
 				console.log("Alt button pressed.");
 			} else {
 				// return true;
-				sendMessageButton.click();
+				if ($("#sendButton").prop("disabled")) {
+					console.log("disabled");
+				} else {
+					console.log("enabled");
+					sendMessageButton.click();
+				}
 				return false;
 			}
 		}
