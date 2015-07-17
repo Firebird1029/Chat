@@ -73,9 +73,9 @@ $(document).ready(function () {
 			} else {
 				// return true;
 				if ($("#sendButton").prop("disabled")) {
-					console.log("disabled");
+					// console.log("disabled");
 				} else {
-					console.log("enabled");
+					// console.log("enabled");
 					sendMessageButton.click();
 				}
 				return false;
