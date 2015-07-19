@@ -17,6 +17,14 @@ $(document).ready(function(){
 		}
 	})
 
+	$('#sendButton').click(function(){
+	    var button = $(this);
+	    button.attr('disabled', 'disabled');
+	    setTimeout(function() {
+	         button.removeAttr('disabled');
+	    },3000);
+	});
+
 	// LEFT COLUMN
 	{
 		// Declare all the variables.
@@ -67,6 +75,8 @@ $(document).ready(function(){
 		$("#settings").submit(function() {
 			// debugger;
 			console.log("Settings form submitted!");
+
+
 
 			// Set variables from what the user set.
 			room = $("#settingsChatRoomName").val();
