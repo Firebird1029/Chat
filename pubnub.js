@@ -2,8 +2,8 @@ $(document).ready(function () {
 	// console.log("Page loaded.");
 
 	var pubnub = PUBNUB.init({
-		publish_key: '',
-		subscribe_key: ''
+		publish_key: 'pub-c-9101f32f-cda7-4e72-9e44-41912c32beb3',
+		subscribe_key: 'sub-c-ebfe6ec0-1af3-11e5-9dcf-0619f8945a4f'
 	});
 	console.log("Pubnub initiated.");
 
